@@ -1,0 +1,698 @@
+<!-- MAHIR ML PORTFOLIO | Enhanced with Dark/Light Mode, Image Projects, Skill Names, Updated Contact -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahir | ML Engineer Portfolio</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #0f2027;
+      --secondary: #203a43;
+      --accent: #00c6ff;
+      --text: #ffffff;
+      --bg-light: #ffffff;
+      --text-dark: #111111;
+    }
+
+    body.light {
+      background: #ffffff;
+      color: var(--text-dark);
+    }
+
+    body.light .card,
+    body.light nav,
+    body.light footer {
+      background: #f9f9f9;
+      color: var(--text-dark);
+    }
+
+    body.light nav a,
+    body.light footer,
+    body.light .tagline {
+      color: var(--text-dark);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    #themeToggle {
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      border-radius: 50px;
+      padding: 0.3rem 1rem;
+      cursor: pointer;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,198,255,0.3);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 1rem;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      backdrop-filter: blur(10px);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .skills-logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .skills-logos img {
+      height: 50px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-logos span {
+      display: block;
+      font-weight: bold;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding-top: 1rem;
+    }
+
+    .project-card {
+      background: rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card .info {
+      padding: 1rem;
+    }
+
+    .project-card .info a {
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .contact p {
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-video {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .resume-video a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .resume-video a:hover {
+      background-color: #00a8e8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.3);
+      margin-top: 3rem;
+    }
+  </style>
+   <style>
+    :root {
+      --primary: #0f2027;
+      --secondary: #203a43;
+      --accent: #00c6ff;
+      --text: #ffffff;
+      --bg-light: #ffffff;
+      --text-dark: #111111;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    body.light .card,
+    body.light nav,
+    body.light footer {
+      background: #f0f0f0;
+      color: var(--text-dark);
+    }
+
+    body.light nav a,
+    body.light footer,
+    body.light .tagline {
+      color: var(--text-dark);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 1rem;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideFadeIn 1s ease-out forwards;
+    }
+
+    @keyframes slideFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    #themeToggle {
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      border-radius: 50px;
+      padding: 0.3rem 1rem;
+      cursor: pointer;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,198,255,0.3);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .contact {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .certifications {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .certifications div {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.3);
+      margin-top: 3rem;
+    }
+    :root {
+      --primary: #0f2027;
+      --secondary: #203a43;
+      --accent: #00c6ff;
+      --text: #ffffff;
+      --bg-light: #ffffff;
+      --text-dark: #111111;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    body.light .card,
+    body.light nav,
+    body.light footer {
+      background: #f0f0f0;
+      color: var(--text-dark);
+    }
+
+    body.light nav a,
+    body.light footer,
+    body.light .tagline {
+      color: var(--text-dark);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 1rem;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideFadeIn 1s ease-out forwards;
+    }
+
+    @keyframes slideFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    #themeToggle {
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      border-radius: 50px;
+      padding: 0.3rem 1rem;
+      cursor: pointer;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,198,255,0.3);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .resume-video {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .resume-video a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .resume-video a:hover {
+      background-color: #00a8e8;
+    }
+
+    .resume-video video {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .contact {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.3);
+      margin-top: 3rem;
+    }
+
+    </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Mahir</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      
+
+      <button id="themeToggle">🌗</button>
+    </div>
+  </nav>
+
+  <header>
+    <img src="mskln.jpg" alt="Mahir Photo">
+    <h1>Mahir Sajad</h1>
+    <p class="tagline">"From pixels to predictions — decoding the world with AI."</p>
+  </header>
+
+  <section class="card" id="about">
+    <h2>About Me</h2>
+    <p>I am Mahir, a driven Machine Learning Engineer passionate about leveraging technology to solve real-world problems. I specialize in computer vision and deep learning, and I've developed multiple end-to-end projects using tools like YOLOv8, TensorFlow, and OpenCV. My mission is to build intelligent systems that not only work but inspire, combining algorithmic depth with practical applications. Whether it's deploying models, writing clean code, or designing beautiful frontends with HTML/CSS — I'm constantly learning, creating, and evolving.</p>
+  </section>
+
+
+  <section class="card" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-logos">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><span>Python</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/><span>C++</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><span>HTML</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><span>CSS</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><span>JavaScript</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"/><span>OpenCV</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"/><span>Supervised Learning</span></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"/><span>Unsupervised Learning</span></div>
+    </div>
+  </section>
+  
+
+  <section class="card" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="download (1).jpeg" alt="YOLOv8 Project">
+        <div class="info">
+          <h3>People Counting with YOLOv8</h3>
+          <p>Real-time crowd detection system using YOLOv8 and OpenCV.</p>
+          <a href="https://github.com/Mahir-msk/Crowd-detection-Using-YOLOV8/tree/main">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="download.png" alt="Library Manager">
+        <div class="info">
+          <h3>Library Management (C++)</h3>
+          <p>DSA-based book tracking and admin interface built in C++.</p>
+          <a href="https://github.com/Mahir-msk/c-Library-Management-System/tree/main">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="download.jpeg" alt="JourneyX">
+        <div class="info">
+          <h3>JourneyX Travel Planner</h3>
+          <p>HTML & CSS based travel platform with modern UI design.</p>
+          <a href="https://github.com/Mahir-msk/journeyx">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="achievements">
+    <h2>Achievements & Highlights</h2>
+    
+      <div style="background-color: rgba(255,255,255,0.1); padding: 1.2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="color: var(--accent); margin-bottom: 0.5rem;">🥈 2nd Place - Incredible 8</h3>
+        <p><strong>Lovely Professional University:</strong> Awarded second place among several teams in a high-impact innovation challenge hosted by LPU.</p>
+      </div>
+<br>
+      <div style="background-color: rgba(255,255,255,0.1); padding: 1.2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="color: var(--accent); margin-bottom: 0.5rem;">📘 DSA Training Completed</h3>
+        <p><strong>Board Infinity:</strong> Completed structured training in data structures and algorithms with hands-on C++ projects.</p>
+      </div>
+<br>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div style="background-color: rgba(255,255,255,0.1); padding: 1.2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+          <h3 style="color: var(--accent); margin-bottom: 0.5rem;">🌐 Global Rank 993</h3>
+          <p><strong>CodeChef Starters 151 (Div 4):</strong> Ranked in top 1000 globally out of 4,000+ participants in this competitive programming contest.</p>
+        </div>
+      
+    </div>
+  </section>
+  <section class="card" id="certifications">
+    <h2>Certifications</h2>
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div style="background-color: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;">
+        <h3 style="color: var(--accent); margin-bottom: 0.5rem;">✅ DSA Mastery - Completed</h3>
+        <p><strong>Platform:</strong> Udemy<br/><strong>Status:</strong> Completed</p>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;">
+        <h3 style="color: var(--accent); margin-bottom: 0.5rem;">📊 Machine Learning - Ongoing</h3>
+        <p><strong>Platform:</strong> Udemy<br/><strong>Status:</strong> Currently Enrolled</p>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;">
+        <h3 style="color: var(--accent); margin-bottom: 0.5rem;">🎓 Masters in Data Science & ML - Ongoing</h3>
+        <p><strong>Platform:</strong> GeeksforGeeks<br/><strong>Status:</strong> In Progress</p>
+      </div>
+    </div>
+  </section>
+  <section class="card" id="resume">
+    <h2>Resume & Video</h2>
+    <div class="resume-video">
+      <a href="12224172newspe.pdf" download><i class="fas fa-file-pdf"></i> Download Resume</a>
+      <video controls>
+        <source src="video-resume.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+
+  <section class="card contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to collaborate or hire me, let's connect:</p>
+    <a href="mailto:mahirsajad779@gmail.com"><i class="fas fa-envelope"></i> mahirsajad779@gmail.com</a>
+    <a href="https://github.com/Mahir-msk" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/mahir-sajad-4464b0260/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </section>
+
+
+  <footer>
+    © 2025 Mahir Sajad | ML Engineer Portfolio
+  </footer>
+
+  <script>
+    // Toggle Light/Dark Mode
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+    });
+  </script>
+</body>
+</html>
